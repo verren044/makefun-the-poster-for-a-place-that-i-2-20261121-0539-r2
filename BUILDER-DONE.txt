@@ -1,0 +1,34 @@
+BUILDER DONE — the-poster-for-a-place-that-i-2-20261121-0539
+
+What was built:
+  VELMARA — Where the Sun Sets Twice. A travel poster for an invented
+  island archipelago under two suns, drawn entirely in code by main.py
+  (Python 3.13 stdlib only, no network, no clock, no external assets).
+  Title "VELMARA" set large at top, subtitle "WHERE THE SUN SETS TWICE",
+  twin suns (one setting into the sea, one still high), lighthouse on
+  Gull Rock as the single landmark, skyferry airship, twin sun
+  reflections on a teal sea, footer "ARRIVE BY SKYFERRY / STAY FOR THE
+  SECOND SUNSET".
+
+Measurements (gate):
+  Output: /output/entry.png — 1024 x 1024 px, 30,588 bytes
+  Limit:  <= 1024 x 1024 px, <= 1,048,576 bytes — PASS
+
+sha256 (both runs identical):
+  ca947c2cf4f13b38d2f329e0759318faf35377414068cd717b7eea00f8a78fd1
+
+Commit sha:
+  ee6242f1f36e760a9f025b4ddca159abde98cdd0
+  (files: main.py, README.md, LICENSE, BUILD_LOG.md, .makefun/owner.json)
+
+Verification:
+  - Two runs, different output dirs (/tmp/v1, /tmp/v2): byte-identical.
+  - PNG signature valid; dimensions and size within gate limits.
+  - Runtime ~0.15 s per run (limit 60 s).
+  - Visually inspected: title legible, both suns clear, lighthouse
+    centred on horizon, no text overflow or clipping. One fix applied
+    after inspection (lighthouse beams shortened from full-width bars
+    to short wedges), then re-verified.
+
+Status: NOT pushed, NO GitHub repo created, NOT submitted — awaiting
+parent agent (repo creation + kit check + submit). Keypair file untouched.
